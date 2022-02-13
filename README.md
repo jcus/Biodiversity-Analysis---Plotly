@@ -9,8 +9,7 @@ From an interactive dashboard to explore the [Belly Button Biodiversity dataset]
 The microbes inhabiting human navels and the factors support this dashboard allows specific study participants to be selected, in order to view their individual demographic information, a list of their navel microbial species and relative abundances, and their weekly navel washing frequency.
 
 # Process :medical_symbol:
-Use D3 library to 
-The original data was provided in JSON format. D3 was used to import and process the data, while Plotly was used to generate the required visualizations. JavaScript was then used to present interactive visualizations of belly button biodiversity data within a web page.
+Use D3 library to import and process the Json format data. Through Plotly to generate the required visualizations of the sample metadata, i.e., and individual's demographic information. Also with JavaScript to display and present interactive visualization of each key-value pair value pair from the belly metadata of button biodiversity as JSON object within a web page. 
 
 ## Step 1: Plotly
 
