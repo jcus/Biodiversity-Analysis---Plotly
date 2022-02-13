@@ -1,12 +1,14 @@
 # Belly Button Biodiversity Analysis- Plot.ly :medical_symbol:
 
-![Bacteria by filterforge.com](Images/bacteria.jpg)
+
+![Bacteria by filterforge.com](Images/microbes-sem.jpg)
 
 # Summary :medical_symbol:
 
 From an interactive dashboard to explore the [Belly Button Biodiversity dataset](http://robdunnlab.com/projects/belly-button-biodiversity/), which catalogs the microbes that colonize human navels. In the aforementioned study, the dataset reveals that a small handful of microbial species (also called operational taxonomic units, or OTUs, in the study) were present in more than 70% of people, while the rest were relatively rare. 
 
 The microbes inhabiting human navels and the factors support this dashboard allows specific study participants to be selected, in order to view their individual demographic information, a list of their navel microbial species and relative abundances, and their weekly navel washing frequency.
+
 
 # Process :medical_symbol:
 Use D3 library to import and process the Json format data. Through Plotly to generate the required visualizations of the sample metadata, i.e., and individual's demographic information. Also with JavaScript to display and present interactive visualization of each key-value pair value pair from the belly metadata of button biodiversity as JSON object within a web page. 
@@ -51,6 +53,7 @@ Additionally, you are welcome to create any layout that you would like for your 
 
 ![hw](Images/hw02.png)
 
+
 ## Advanced Challenge (Optional)
 
 * Adapt the Gauge Chart from <https://plot.ly/javascript/gauge-charts/> to plot the weekly washing frequency of the individual.
@@ -75,7 +78,7 @@ Additionally, you are welcome to create any layout that you would like for your 
 
 
 - - -
-
+![Bacteria by filterforge.com](Images/bacteria.jpg)
 ## References
 
 Hulcr, J. et al.(2012) _A Jungle in There: Bacteria in Belly Buttons are Highly Diverse, but Predictable_. Retrieved from: [http://robdunnlab.com/projects/belly-button-biodiversity/results-and-data/](http://robdunnlab.com/projects/belly-button-biodiversity/results-and-data/)
