@@ -81,6 +81,19 @@ Additionally, you are welcome to create any layout that you would like for your 
 ![Bacteria by filterforge.com](Images/bacteria.jpg)
 ## References
 
+Data Set Used:
 Hulcr, J. et al.(2012) _A Jungle in There: Bacteria in Belly Buttons are Highly Diverse, but Predictable_. Retrieved from: [http://robdunnlab.com/projects/belly-button-biodiversity/results-and-data/](http://robdunnlab.com/projects/belly-button-biodiversity/results-and-data/)
+
+[Ploty Chart References] (https://plotly.com/javascript/)
+
+[D3 Data-Driven Documents] (https://d3js.org/)
+
+
+## Technologies Used
+PyCharm
+JavaScript - Plotly, D3
+HTML5
+CSS3
+Bootstrap
 
 - - -
