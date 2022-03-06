@@ -14,11 +14,11 @@ function init()
             .property("value", sample);
         });
 
-        var sample_one = sample_names[0];
-        barChart(sample_one);
-        bubbleChart(sample_one);
-        metadataChart(sample_one);
-        gaugeChart(sample_one);
+        var sample1 = sample_names[0];
+        barChart(sample1);
+        BubbleChart(sample1);
+    //    metadataChart(sample1);
+        gaugeChart(sample1);
     });
 }
 init();
@@ -197,11 +197,14 @@ function BubbleChart(sample)
         // grab all of the samples
         let sampleData = data.samples;
 
+        console.log(sample);
         // filter based on the value of the sample ( should return 1 result in an array
         // based on the dataset)
         let result = sampleData.filter(sampleResult => sampleResult.id == sample);
-        
-        // access index 0 from the array        let resultData = result[0];
+
+        //console.log(resultData);
+        // access index 0 from the array        
+        let resultData = result[0];
 
 
         // get the otu_ids, labels, and sample_values
@@ -210,7 +213,7 @@ function BubbleChart(sample)
         let sample_values = resultData.sample_values;
      
         // build the bubble chart
-        let bubbleChart = {
+        let bubbledata = {
             y: sample_values,
             x: otu_ids,
             text: otu_labels,
@@ -222,13 +225,19 @@ function BubbleChart(sample)
             }
         }
 
-        let layout = {
-            title: "Bacteria Cultures Per Sample",
-            hovermode: "closest",
-            xaxis: {title: "OTU ID"}
-        };
+        console.log(bubbledata);
 
-        Plotly.newPlot("bubble", [bubbleChart], layout);
+        let layout = 
+        {
+            title: "Bacteria Cultures Per Sample",
+            margin: { t: 0 },
+            hovermode: "closest",
+            xaxis: { title: "OTU ID" },
+            margin: { t: 30}
+        };
+          
+
+        Plotly.newPlot("bubble", [bubbledata], layout);
     });
 }
 
@@ -269,6 +278,7 @@ function initialize()
 }
 
 
+
 // 5 function that updates the dashboard
 function optionChanged(newSample)
 {
@@ -277,7 +287,7 @@ function optionChanged(newSample)
     // call function to build the bar chart
     barChart(newSample);
     // call function to build the bubble chart
-    bubbleChart(newSample);
+    BubbleChart(newSample);
     metadataChart(newSample);
     gaugeChart(newSample);
 }
